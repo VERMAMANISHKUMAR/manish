@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Cricket</title>
+  <link rel="Stylesheet"href="Cricket.css">
+</head>
+<style>
+  body{
+    text-align: center;
+    background-color: darkmagenta;
+  }
+</style>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  <button class="botton1" onclick="
+ let cocomputerChoice= generateComputerChoice();
+ 
+  let resultMsg;
+
+  if(computerChoice === 'Ball'){
+    resultMsg=`User won.`;
+  }
+  else if (computerChoice==='Bat'){
+    resultMsg=`it's a tie`;
+  }
+  else if(computerChoice==='Stump'){
+    resultMsg=`computer has won`;
+  }
+
+   alert(`Your Choice is Bat. And Computer Choice is ${computerChoice} and ${resultMsg}`);
+
+  ">Bet</button>
+<!-- ********************************* -->
+ <button class="botton1"  onclick="
+ computerChoice=generateComputerChoice();
+
+
+ if(computerChoice === 'Ball'){
+   resultMsg=`It's a tie`;
+ }
+ else if (computerChoice==='Bat'){
+   resultMsg=`Computer has won`;
+ }
+ else if(computerChoice==='Stump'){
+   resultMsg=`User won`;
+ }
+
+  alert(`Your Choice is Ball. And Computer Choice is ${computerChoice} and ${resultMsg}`);
+
+ "
+ >Ball</button>
+
+<!-- **************************************** -->
+  <button class="botton1" onclick="
+     computerChoice = generateComputerChoice();
+
+  if(computerChoice === 'Ball'){
+    resultMsg=`it's a tie`;
+  }
+  else if (computerChoice === 'Bat'){
+    resultMsg=`Computer has won.`;
+  }
+  else if(computerChoice === 'Stump'){
+    resultMsg=`User won`;
+  }
+ 
+   alert(`Your Choice is Stump. And Computer Choice is ${computerChoice} and ${resultMsg}`);
+  ">Stump</button>
+
+
+
+  <script>
+ let computerChoice; //computer cnoice is difind here
+ function generateComputerChoice(){
+  let randomNumber = Math.random() * 3;
+  if(randomNumber > 0 && randomNumber <= 1)
+  {
+    computerChoice = 'Bat';
+
+  } else if(randomNumber > 1 && randomNumber<= 2)
+  {
+    computerChoice = 'Ball';
+
+  }else
+  {
+    computerChoice = 'Stump';
+  }
+ return computerChoice;
+ }
+  </script>
+
+</body>
+</html>

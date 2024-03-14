@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <H1 style="text-align: center;">If Alternates</H1>
+          <ol>
+                    
+                    <b><li ><mark>Ternary Operaters :-</mark> condition ? trueValue : falseValue</li> </b><br><p>Quick one-line if-else.</p>
+                    <b><li ><mark>Guard Operator :- </mark> Value || defaultValue</li></b><br><p>Use when a fallback value is needed.</p>
+                    <b><li ><mark>Default Operator :-</mark> Value ?? fallbackValue</li></b><br><p>Use when you want to consider only null and undefined as fasy.</p><br>
+                    <b><li ><mark>Simplifies</mark> conditinal logic</li></b><br>
+                    <b><li ><mark>Use</mark> wisely to maintain readability.</li></b>
+          </ol>
+          <script>
+               //normal function
+                    let age =35;
+                    let result;
+                    if(age){
+                              result = 'Adult'
+                    }else{
+                              result = ' Not Aduld'
+                    }
+                    console.log(age);
+                    // --------------------------------
+                    //  this is Ternary Operaters function
+                    let age1 =40;
+                    let result1=age1>18 ? 'Adult' : 'Not Adult' ;
+                    console.log(result1);
+
+                    // *************************
+                    //  this is Guard Operaters function
+                    let age2 =9;
+                    let finalAge = age2 || 18;
+                    console.log(age2);
+                     console.log(finalAge);
+                    //  +++++++++++++++++++++
+                       //  this is Default Operator  function
+                       let age3 =9;
+                    let finalAge1 = age2 || 18;
+                    console.log(age2);
+                    console.log(finalAge);
+
+
+          </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+body{
+ 
+}
+.button1{
+background-color: rgb(0, 255, 68);
+padding: 10px 15px;
+border-radius: 8px;
+}
+.button2{
+  
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+.button3{
+  background-color: rgb(255, 230, 0);
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
